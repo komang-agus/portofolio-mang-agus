@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <title>Software Engineer Portfolio</title>
+  </head>
+  <body class="bg-bg-light text-slate-800 font-sans antialiased">
+    <header
+      class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm"
+    >
+      <nav
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-extrabold text-primary tracking-tighter">
+          Dev<span class="text-slate-800">Portfolio.</span>
+        </div>
+        <ul class="hidden md:flex gap-8 font-medium text-slate-600">
+          <li>
+            <a href="#about" class="hover:text-primary transition">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-primary transition">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-primary transition"
+              >Projects</a
+            >
+          </li>
+        </ul>
+        <a
+          href="#contact"
+          class="hidden md:block bg-primary hover:bg-primary-dark text-black px-5 py-2 rounded-lg font-semibold transition shadow-md"
+        >
+          Contact Me
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        id="about"
+        class="max-w-6xl mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="w-full md:w-3/5 text-center md:text-left">
+          <p class="text-primary font-bold tracking-wider uppercase mb-2">
+            Full-Stack Developer
+          </p>
+          <h1
+            class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6"
+          >
+            Building scalable web <br class="hidden md:block" />
+            architectures.
+          </h1>
+          <p class="text-lg text-slate-600 mb-8 max-w-lg mx-auto md:mx-0">
+            Specializing in semantic markup, modern CSS frameworks, and highly
+            optimized, accessible user interfaces.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+          >
+            <a
+              href="#projects"
+              class="bg-primary text-black px-8 py-3 rounded-lg font-bold shadow-lg hover:shadow-xl transition"
+              >View Work</a
+            >
+            <a
+              href="https://github.com"
+              target="_blank"
+              class="bg-white text-slate-700 border border-slate-300 px-8 py-3 rounded-lg font-bold hover:bg-slate-50 transition"
+              >GitHub Profile</a
+            >
+          </div>
+        </div>
+        <div class="w-full md:w-2/5 flex justify-center">
+          <div
+            class="w-64 h-64 md:w-80 md:h-80 bg-slate-200 rounded-full border-4 border-white shadow-2xl flex items-center justify-center text-slate-400 font-bold"
+          >
+            [ Avatar Image ]
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="bg-white py-20 border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">
+            Technical Arsenal
+          </h2>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div
+              class="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center hover:-translate-y-1 transition duration-300"
+            >
+              <h3 class="font-bold text-lg text-slate-800">HTML5</h3>
+              <p class="text-slate-500 text-sm mt-1">Semantic & Accessible</p>
+            </div>
+            <div
+              class="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center hover:-translate-y-1 transition duration-300"
+            >
+              <h3 class="font-bold text-lg text-slate-800">CSS3 & Tailwind</h3>
+              <p class="text-slate-500 text-sm mt-1">Responsive Layouts</p>
+            </div>
+            <div
+              class="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center hover:-translate-y-1 transition duration-300"
+            >
+              <h3 class="font-bold text-lg text-slate-800">JavaScript</h3>
+              <p class="text-slate-500 text-sm mt-1">DOM Manipulation</p>
+            </div>
+            <div
+              class="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center hover:-translate-y-1 transition duration-300"
+            >
+              <h3 class="font-bold text-lg text-slate-800">Git & GitHub</h3>
+              <p class="text-slate-500 text-sm mt-1">Version Control</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">
+          Featured Projects
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article
+            class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 flex flex-col"
+          >
+            <div
+              class="h-48 bg-slate-200 flex items-center justify-center text-slate-400"
+            >
+              [ Project Screenshot ]
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-slate-900 mb-2">
+                E-Commerce Dashboard
+              </h3>
+              <p class="text-slate-600 mb-4 flex-grow">
+                A responsive administrative interface built utilizing CSS Grid
+                and Tailwind utilities, featuring interactive layout toggles.
+              </p>
+              <div class="flex gap-2 mb-6">
+                <span
+                  class="text-xs font-bold bg-blue-100 text-blue-700 px-2 py-1 rounded"
+                  >HTML</span
+                >
+                <span
+                  class="text-xs font-bold bg-teal-100 text-teal-700 px-2 py-1 rounded"
+                  >Tailwind</span
+                >
+              </div>
+              <a href="#" class="text-primary font-bold hover:underline"
+                >View Live Demo &rarr;</a
+              >
+            </div>
+          </article>
+
+          <article
+            class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 flex flex-col"
+          >
+            <div
+              class="h-48 bg-slate-200 flex items-center justify-center text-slate-400"
+            >
+              [ Project Screenshot ]
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-slate-900 mb-2">
+                Accessible Form Component
+              </h3>
+              <p class="text-slate-600 mb-4 flex-grow">
+                A highly optimized data collection form adhering strictly to
+                WCAG accessibility guidelines and ARIA attributes.
+              </p>
+              <div class="flex gap-2 mb-6">
+                <span
+                  class="text-xs font-bold bg-purple-100 text-purple-700 px-2 py-1 rounded"
+                  >A11y</span
+                >
+                <span
+                  class="text-xs font-bold bg-blue-100 text-blue-700 px-2 py-1 rounded"
+                  >HTML</span
+                >
+              </div>
+              <a href="#" class="text-primary font-bold hover:underline"
+                >View Live Demo &rarr;</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-12 text-center">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-white mb-6">
+          Ready to collaborate?
+        </h2>
+        <p class="mb-8 max-w-md mx-auto">
+          Available for freelance opportunities and full-time roles in frontend
+          development.
+        </p>
+        <a
+          href="mailto:contact@example.com"
+          class="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-lg font-bold transition mb-12"
+        >
+          Send an Email
+        </a>
+        <p class="text-sm">
+          &copy; 2026 Developer Name. Built with Semantic HTML & Tailwind CSS.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
