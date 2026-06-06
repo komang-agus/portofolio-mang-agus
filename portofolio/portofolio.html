@@ -1,40 +1,60 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="id" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Mang Agus</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/output.css" />
   </head>
-  <body class="min-h-screen">
-    <header
-      class="sticky top-0 z-15 border-b border-line/70 bg-paper/40 backdrop-blur-xl"
-    >
+  <body class="bg-paper font-main text-ink">
+    <header class="sticky top-0 z-10 border-b border-line bg-paper/90">
       <nav
         class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4"
       >
-        <a href="#hero">
-          <img src="./assets/logo.png" alt="logo" class="h-6" />
+        <a href="#hero" class="flex items-center gap-3">
+          <img src="./assets/logo.png" alt="Logo Mang Agus" class="w-24" />
         </a>
 
         <ul
-          class="hidden items-center gap-8 text-sm font-bold text-muted md:flex"
+          class="hidden items-center gap-6 text-sm font-bold text-muted md:flex"
         >
-          <li><a href="#about" class="nav-link hover:text-ocean">About</a></li>
           <li>
-            <a href="#skills" class="nav-link hover:text-ocean">Skills</a>
+            <a
+              href="#about"
+              class="transition duration-300 ease-in-out hover:text-ocean"
+              >About</a
+            >
           </li>
           <li>
-            <a href="#projects" class="nav-link hover:text-ocean">Projects</a>
+            <a
+              href="#skills"
+              class="transition duration-300 ease-in-out hover:text-ocean"
+              >Skills</a
+            >
           </li>
           <li>
-            <a href="#contact" class="nav-link hover:text-ocean">Contact</a>
+            <a
+              href="#projects"
+              class="transition duration-300 ease-in-out hover:text-ocean"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="transition duration-300 ease-in-out hover:text-ocean"
+              >Contact</a
+            >
           </li>
         </ul>
 
         <a
           href="#contact"
-          class="rounded-full bg-ocean px-5 py-2 text-sm font-bold text-white shadow-lg shadow-ocean/20 transition duration-300 hover:-translate-y-0.5 hover:bg-sky"
+          class="rounded-full bg-ocean px-4 py-2 text-sm font-bold text-white transition duration-300 ease-in-out hover:bg-sky"
         >
           Say hello
         </a>
@@ -43,91 +63,247 @@
 
     <main>
       <section
-        class="mx-auto grid mt-7 px-2 max-w-[631px] xl:max-w-7xl xl:mt-20 xl:grid-cols-2 xl:items-center xl:gap-12"
         id="hero"
+        class="mx-auto grid max-w-6xl gap-10 px-5 py-12 md:grid-cols-2 md:items-center lg:py-20"
       >
-        <div class="max-w-[631px] mx-auto">
-          <h4
-            class="bg-sun text-ocean w-90 h-9 text-base text-center content-center text-sm font-black rounded-full"
-          >
-            Frontend learner + Future Full Stack Developer
-          </h4>
-
-          <h1
-            class="mt-5 text-[38px] min-[430px]:text-[42px] md:text-5xl leading-[1.05] font-black"
-          >
-            Hi, saya Mang Agus. <br />Saya membangun website sederhana, rapi,
-            dan responsif.
-          </h1>
-
-          <p class="text-xl text-muted mt-5">
-            Portfolio ini dibuat dengan HTML dan Tailwind CSS. dengan warna yang
-            cerah, ringan, dengan layout responsive
-          </p>
-
-          <div class="mt-7 flex flex-col gap-3 xl:flex-row">
-            <a
-              href="#"
-              class="bg-ocean text-white font-black px-7 py-3 rounded-full text-center"
-              >Lihat Project</a
-            >
-            <a
-              href="#"
-              class="text-ocean bg-white font-black px-7 py-3 border-2 border-ocean/20 rounded-full text-center"
-              >Kenalan Dulu</a
-            >
-          </div>
-        </div>
-
-        <div class="mt-10 mx-auto gap-3 xl:mt-0 xl:mx-0 xl:justify-self-end">
-          <img
-            src="./assets/profile.jpg"
-            alt="profile"
-            class="block rounded-t-[9999px] w-100 sm:w-120"
-          />
-        </div>
-      </section>
-
-      <section id="about" class="mt-50 mx-2 max-w-[800px] sm:mx-auto">
         <div>
-          <h4
-            class="bg-sun text-ocean w-30 h-9 text-base text-center content-center text-sm font-black rounded-full"
+          <p
+            class="inline-block rounded-full bg-sun px-4 py-2 text-sm font-black text-ocean"
           >
-            About Me
-          </h4>
-          <h1
-            class="mt-5 text-[25px] min-[430px]:text-[42px] md:text-5xl leading-[1.05] font-black"
-          >
-            Saya sedang belajar membuat website yang rapi, responsive, dan mudah
-            digunakan
-          </h1>
-          <p class="mt-5 text-xl text-muted">
-            Halo, saya Mang Agus. Saya sedang belajar frontend development
-            dengan HTML, CSS, Tailwind CSS, dan JavaScript. Saya suka membuat
-            tampilan website yang sederhana, bersih, dan nyaman dilihat di
-            berbagai ukuran layar. Saat ini saya sedang memperkuat dasar-dasar
-            frontend sambil perlahan belajar menuju full stack development.
-            Portfolio ini menjadi tempat saya latihan, bereksperimen, dan
-            mengumpulkan project yang saya buat.
+            Frontend Learner + Future Full Stack Developer
           </p>
+
+          <h1 class="mt-5 text-4xl font-black leading-tight md:text-5xl">
+            Hi, saya Mang Agus. Saya membangun website sederhana, rapi, dan
+            responsif.
+          </h1>
+
+          <p class="mt-5 text-lg leading-8 text-muted">
+            Portfolio ini dibuat dengan HTML dan Tailwind CSS. Saya memakai
+            warna yang cerah, layout yang ringan, dan tampilan yang tetap enak
+            dibaca di mobile maupun desktop.
+          </p>
+
+          <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="#projects"
+              class="rounded-full bg-ocean px-7 py-3 text-center font-black text-white transition duration-300 ease-in-out hover:bg-sky"
+            >
+              Lihat Project
+            </a>
+            <a
+              href="#about"
+              class="rounded-full border-2 border-ocean/20 bg-white px-7 py-3 text-center font-black text-ocean transition duration-300 ease-in-out hover:bg-ice"
+            >
+              Kenalan Dulu
+            </a>
+          </div>
         </div>
 
-        <div class="grid grid-row-3 mt-5 xl:grid-cols-3 xl:gap-5">
-          <div class="border border-line bg-white/70 rounded-xl mt-5 h-25 content-center pl-5 xl:w-60">
-            <h2 class="font-black text-xl">Fokus</h2>
-            <p class="text-lg text-muted mt-2">Frontend responsive</p>
-          </div>
-          <div class="border border-line bg-white/70 rounded-xl mt-5 h-25 content-center pl-5 xl:w-60">
-            <h2 class="font-black text-xl">Belajar</h2>
-            <p class="text-lg text-muted mt-2">Tailwind,Laravel,ReactJS</p>
-          </div>
-          <div class="border border-line bg-white/70 rounded-xl mt-5 h-25 content-center pl-5 xl:w-60">
-            <h2 class="font-black text-xl">Fokus</h2>
-            <p class="text-lg text-muted mt-2">Frontend responsive</p>
+        <div class="mx-auto max-w-sm md:max-w-md">
+          <div class="rounded-t-full p-3">
+            <img
+              src="./assets/profile.jpg"
+              alt="Foto profile Mang Agus"
+              class="w-full rounded-t-full"
+            />
           </div>
         </div>
       </section>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+      <section id="about" class="mx-auto max-w-6xl px-5 py-14">
+        <div
+          class="grid gap-8 rounded-2xl border border-line bg-white p-6 md:grid-cols-2 md:p-8"
+        >
+          <div>
+            <p
+              class="inline-block rounded-full bg-sun px-4 py-2 text-sm font-black text-ocean"
+            >
+              About Me
+            </p>
+            <h2 class="mt-4 text-3xl font-black leading-tight md:text-4xl">
+              Saya sedang belajar membuat website yang rapi, responsive, dan
+              mudah digunakan.
+            </h2>
+          </div>
+
+          <div class="text-base leading-8 text-muted md:text-lg">
+            <p>
+              Halo, saya Mang Agus. Saya sedang belajar frontend development
+              dengan HTML, CSS, Tailwind CSS, dan JavaScript. Saya suka membuat
+              tampilan website yang sederhana, bersih, dan nyaman dilihat.
+            </p>
+            <p class="mt-4">
+              Saat ini saya memperkuat dasar-dasar frontend sambil perlahan
+              belajar menuju full stack development. Portfolio ini menjadi
+              tempat saya latihan dan mengumpulkan project yang saya buat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="mx-auto max-w-6xl px-5 py-14">
+        <div class="mb-8">
+          <p
+            class="inline-block rounded-full bg-sun px-4 py-2 text-sm font-black text-ocean"
+          >
+            Skills
+          </p>
+          <h2 class="mt-4 text-3xl font-black md:text-4xl">
+            Skill yang sedang saya pelajari.
+          </h2>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-2xl border border-line bg-card p-5 shadow">
+            <p class="text-3xl font-black text-ocean">01</p>
+            <h3 class="mt-4 text-xl font-black">HTML</h3>
+            <p class="mt-3 leading-7 text-muted">
+              Membuat struktur halaman dengan tag semantic seperti header, main,
+              section, article, dan footer.
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-line bg-card p-5 shadow">
+            <p class="text-3xl font-black text-ocean">02</p>
+            <h3 class="mt-4 text-xl font-black">CSS</h3>
+            <p class="mt-3 leading-7 text-muted">
+              Mengatur warna, ukuran, margin, padding, border, dan tampilan card
+              yang rapi.
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-line bg-card p-5 shadow">
+            <p class="text-3xl font-black text-ocean">03</p>
+            <h3 class="mt-4 text-xl font-black">Tailwind CSS</h3>
+            <p class="mt-3 leading-7 text-muted">
+              Menggunakan utility class untuk membuat layout responsive dengan
+              lebih cepat.
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-line bg-card p-5 shadow">
+            <p class="text-3xl font-black text-ocean">04</p>
+            <h3 class="mt-4 text-xl font-black">JavaScript</h3>
+            <p class="mt-3 leading-7 text-muted">
+              Belajar dasar interaksi supaya website terasa lebih hidup dan
+              mudah digunakan.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="bg-ice/60 px-5 py-14">
+        <div class="mx-auto max-w-6xl">
+          <div class="mb-8">
+            <p
+              class="inline-block rounded-full bg-sun px-4 py-2 text-sm font-black text-ocean"
+            >
+              Projects
+            </p>
+            <h2 class="mt-4 text-3xl font-black md:text-4xl">
+              Project latihan yang saya buat.
+            </h2>
+          </div>
+
+          <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-2xl border border-line bg-white p-5 shadow">
+              <div class="mb-5 rounded-xl bg-ocean p-5">
+                <div class="h-4 w-28 rounded-full bg-white"></div>
+                <div class="mt-5 grid grid-cols-2 gap-3">
+                  <div class="h-20 rounded-lg bg-sun"></div>
+                  <div class="h-20 rounded-lg bg-ice"></div>
+                </div>
+              </div>
+              <p class="text-sm font-black uppercase text-ocean">HTML + CSS</p>
+              <h3 class="mt-2 text-2xl font-black">Profile Card</h3>
+              <p class="mt-3 leading-7 text-muted">
+                Latihan membuat card sederhana memakai box model, border,
+                padding, dan warna.
+              </p>
+            </article>
+
+            <article class="rounded-2xl border border-line bg-white p-5 shadow">
+              <div class="mb-5 rounded-xl bg-sky p-5">
+                <div class="h-4 w-32 rounded-full bg-white"></div>
+                <div class="mt-5 flex gap-3">
+                  <div class="h-24 flex-1 rounded-lg bg-white"></div>
+                  <div class="h-16 flex-1 rounded-lg bg-sun"></div>
+                  <div class="h-20 flex-1 rounded-lg bg-ice"></div>
+                </div>
+              </div>
+              <p class="text-sm font-black uppercase text-ocean">Responsive</p>
+              <h3 class="mt-2 text-2xl font-black">Feature Grid</h3>
+              <p class="mt-3 leading-7 text-muted">
+                Latihan membuat card yang tersusun satu kolom di mobile dan
+                berubah menjadi grid di layar besar.
+              </p>
+            </article>
+
+            <article class="rounded-2xl border border-line bg-white p-5 shadow">
+              <div class="mb-5 rounded-xl bg-mist p-5">
+                <div class="h-4 w-24 rounded-full bg-ocean"></div>
+                <div class="mt-5 space-y-3">
+                  <div class="h-4 rounded-full bg-white"></div>
+                  <div class="h-4 w-9/12 rounded-full bg-white"></div>
+                  <div class="h-4 w-10/12 rounded-full bg-white"></div>
+                </div>
+              </div>
+              <p class="text-sm font-black uppercase text-ocean">
+                Tailwind CSS
+              </p>
+              <h3 class="mt-2 text-2xl font-black">Portfolio Page</h3>
+              <p class="mt-3 leading-7 text-muted">
+                Halaman portfolio satu halaman berisi hero, skill, project,
+                kontak, dan footer.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer id="contact" class="border-t border-line bg-white px-5 py-8">
+      <div
+        class="mx-auto grid max-w-6xl gap-6 text-sm font-semibold text-muted md:grid-cols-[1fr_auto] md:items-center"
+      >
+        <div class="flex flex-col justify-center gap-3">
+          <img src="./assets/logo.png" alt="Logo Mang Agus" class="w-45" />
+          <p class="md:whitespace-nowrap">
+            &copy; 2026 Mang Agus. All rights reserved. Built with HTML and
+            Tailwind CSS.
+          </p>
+        </div>
+
+        <div class="md:text-right">
+          <p class="font-black text-ink">Contact</p>
+          <div class="mt-3 flex gap-3 md:justify-end">
+            <a
+              href="#"
+              aria-label="TikTok"
+              class="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-paper text-xl text-ocean transition duration-300 ease-in-out hover:-translate-y-1 hover:bg-ocean hover:text-white hover:shadow-lg"
+            >
+              <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-paper text-xl text-ocean transition duration-300 ease-in-out hover:-translate-y-1 hover:bg-ocean hover:text-white hover:shadow-lg"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="mailto:mangagus2009@gmail.com"
+              aria-label="Email"
+              class="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-paper text-xl text-ocean transition duration-300 ease-in-out hover:-translate-y-1 hover:bg-ocean hover:text-white hover:shadow-lg"
+            >
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
